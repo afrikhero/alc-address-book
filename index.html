@@ -13,63 +13,39 @@
     </header>
 
     <!-- Add address form -->
-    <div id="add-address">
-      <form>
+    <button type="button" id="quickAddBtn">Add Contact</button>
+    <div id="addContactDiv" class="hidden">
+      <form id="addContactForm">
         <p>
-          <label for="name" class="hidden">Name</label>
-          <input type="text" name="name" placeholder="Name" required />
+          <label for="fullName" class="hidden">Name</label>
+          <input type="text" name="fullName" id="fullName" placeholder="Name" required />
         </p>
 
         <p>
-          <label for="mobile-no"class="hidden">Mobile No</label>
-          <input type="number" name="mobile-no" placeholder="Mobile No" required />
+          <label for="mobileNo"class="hidden">Mobile No</label>
+          <input type="number" name="mobileNo" id="mobileNo" placeholder="Mobile No" required />
         </p>
 
         <p>
-          <label for="home-no" class="hidden">Home No</label>
-          <input type="number" name="home-no" placeholder="Home No" required />
+          <label for="homeNo" class="hidden">Home No</label>
+          <input type="number" name="homeNo" id="homeNo" placeholder="Home No" required />
         </p>
 
         <p>
           <label for="email" class="hidden">Email Address</label>
-          <input type="email" name="email" placeholder="Email Address" required />
+          <input type="email" name="email" id="email" placeholder="Email Address" required />
         </p>
 
-          <button type="submit" name="add">Add</button>
+          <button type="submit" name="add" id="addBtn">Add</button>
+
+          <button type="reset" name="cancelBtn" id="cancelBtn">Cancel</button>
       </form>
     </div>
 
     <div id="address-lists">
-      <div id="address">
-        <ul>
-          <li>
-            Name
-            <ul>
-              <li>
-                <table>
-                  <thead>
-                    <tr>
-                      <th> Name </th>
-                      <th> Mobile No </th>
-                      <th> Home No </th>
-                      <th> Email Adress </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td> Joseph Ibeh </td>
-                      <td> 08106240118 </td>
-                      <td> 08037464529 </td>
-                      <td> noblejoeuc@gmail.com </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+
     </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
