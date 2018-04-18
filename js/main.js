@@ -80,4 +80,21 @@ function displayAddressBook () {
   }
 }
 
+addressDiv.addEventListener('click', update);
+
+// Delete Contact
+function update(e){
+  if (e.target.classList.contains("delete")) {
+    alert('deleted');
+    var id = e.target.getAttribute('data-id');
+    // delete address with id from the json array
+    addressBook = JSON.parse(localStorage['addBook']);
+    addressBook.splice(id, 1);
+    localStorage['addBook'] = JSON.stringify(addressBook);
+
+    displayAddressBook();
+
+  }
+}
+
 displayAddressBook();
